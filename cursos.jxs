@@ -1,0 +1,21 @@
+import { link } from "react-router-dom";
+import CardReveal from "../../components/cards/card-reveal";
+
+export default fuction Cursos(){
+   const [cursos, setCursos] = useState([{
+      colecaoId: 0,
+      nome; 'Nome do Curso'
+      descricao: 'Descricao do Curso'
+}]);
+   return(
+    <>
+      <h1>Cursos</h1>
+      <div className="row">
+         { cursos.map( curso => <CardReveal curso={curso}>)}
+         <CardReveal />
+      </div>
+      <Link to="/cursos/novo">
+      <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</a>
+      </link>
+    </>
+}

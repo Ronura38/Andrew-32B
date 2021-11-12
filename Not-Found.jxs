@@ -1,0 +1,9 @@
+import BasicCard from "../../components/cards/basic-card";
+
+const NotFound = () => (
+    <div className="row center">
+    <BasicCard titulo="404" descricao="pagina não encontrada" /> 
+    </div>
+);
+
+export default NotFound
